@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a6eaef94;
+}
+
+.active {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100px);
+  grid-template-columns: repeat(3, 100px);
+  -ms-grid-rows: (100px);
+  grid-template-rows: repeat(3, 100px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.container div {
+  font-size: 30px;
+  border: 2px solid black;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container div:nth-child(1),
+.container div:nth-child(4),
+.container div:nth-child(7) {
+  border-left: none;
+}
+
+.container div:nth-child(3),
+.container div:nth-child(6),
+.container div:nth-child(9) {
+  border-right: none;
+}
+
+.container div:nth-child(1),
+.container div:nth-child(2),
+.container div:nth-child(3) {
+  border-top: none;
+}
+
+.container div:nth-child(7),
+.container div:nth-child(8),
+.container div:nth-child(9) {
+  border-bottom: none;
+}
+/*# sourceMappingURL=style.css.map */
