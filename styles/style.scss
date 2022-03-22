@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #a6eaef94;
+  background-color: black;
 }
 .active {
   opacity: 0.6;
@@ -27,8 +27,9 @@ body {
   -o-transform: translate(-50%, -50%);
 
   div {
+    color: white;
     font-size: 30px;
-    border: 2px solid black;
+    border: 2px solid white;
     display: grid;
     place-items: center;
     user-select: none;
